@@ -1,0 +1,33 @@
+{
+  "name": "@smolsoftboi/brand-registry",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Canonical Git-backed registry of sourced, verified, versioned brand colour data.",
+  "type": "module",
+  "files": [
+    "data",
+    "schemas",
+    "exports",
+    "dist"
+  ],
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "build:exports": "tsx scripts/generate-exports.ts",
+    "build": "yarn validate && yarn build:index && yarn build:exports"
+  },
+  "keywords": [
+    "brand-colors",
+    "brand-colours",
+    "design-tokens",
+    "registry",
+    "css",
+    "tailwind"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
