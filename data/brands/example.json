@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/brand.schema.json",
+  "name": "Example Brand",
+  "slug": "example",
+  "domain": "example.com",
+  "status": "candidate",
+  "lastCheckedAt": "2026-05-24",
+  "notes": "Template record only. Do not treat this as verified brand data.",
+  "colours": [
+    {
+      "name": "Example Primary",
+      "hex": "#3366FF",
+      "role": "primary",
+      "confidence": "community",
+      "sourceId": "example-manual-submission",
+      "notes": "Replace this example with sourced evidence before verification."
+    }
+  ],
+  "sources": [
+    {
+      "id": "example-manual-submission",
+      "type": "manual_submission",
+      "url": "https://example.com/",
+      "checkedAt": "2026-05-24",
+      "notes": "Template source only."
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-05-24",
+      "summary": "Added starter example record for schema and workflow testing."
+    }
+  ]
+}
